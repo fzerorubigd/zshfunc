@@ -19,7 +19,8 @@ transfer() { curl --progress-bar --upload-file $1 https://transfer.sh/$(basename
 alias transfer=transfer
 
 # A simple command not found handler for running command in persian :))
-command_not_found_handler() {
+# disabled in favor of thefuck
+____command_not_found_handler() {
   persian=( ؛ ، × ٪ ﷼ ٫ ٬ ! ۰ ۹ ۸ ۷ ۶ ۵ ۴ ۳ ۲ ۱ و پ د ذ ر ز ط ظ گ ک م ن ت ا ل ب ی س ش چ ج ح خ ه ع غ ف ق ث ص ض )
   english=( q w e r t y u i o p \[ \] a s d f g h j k l \; \' z x c v b n m , 1 2 3 4 5 6 7 8 9 0 ! @ \# \$ % \^ \& \" )
   len=`echo ${#english[*]}`

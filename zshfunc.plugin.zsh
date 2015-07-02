@@ -69,5 +69,5 @@ uncaps() {
 fi;
 
 function md() {
-     command mkdir $1 && cd $1
+     command mkdir -p $1 && cd $1
 }

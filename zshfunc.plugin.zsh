@@ -67,3 +67,7 @@ uncaps() {
 	bindkey -M vicmd 'k' history-substring-search-up
 	bindkey -M vicmd 'j' history-substring-search-down
 fi;
+
+function md() {
+     command mkdir $1 && cd $1
+}

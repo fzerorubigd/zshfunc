@@ -14,7 +14,7 @@ alias fa='setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:scroll us,ir
 
 alias listener='sudo lsof -Pnl +M -i4'
 
-function gi() { curl http://www.gitignore.io/api/$@ ;}
+function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ; }
 transfer() { curl --progress-bar --upload-file $1 https://transfer.sh/$(basename $1); }
 alias transfer=transfer
 
